@@ -1,0 +1,8 @@
+services:
+  myapp:
+    image: phamvanminh7531/db_superset:1.1.0
+    container_name: db_superset
+    volumes:
+      - ./app:/app
+    ports:
+      - "8088:8088"
